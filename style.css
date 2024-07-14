@@ -1,0 +1,68 @@
+body {
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1rem; /* Correct property name is font-size instead of font */
+}
+
+.parent {
+    background-color: aqua;
+    color: black;
+    padding: 15px;
+    margin: 0 auto; /* Center align the parent container */
+    max-width: 100%; /* Ensure the parent container doesn't exceed the screen width */
+    border: 5px black solid;
+    font-size: 1rem;
+}
+
+#rkpehe {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    border: 5px blue solid;
+}
+
+/* Responsive Styles */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Mobile styles */
+    body {
+        padding: 10px;
+    }
+    .parent {
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Tablet styles */
+    body {
+        padding: 20px;
+    }
+    .parent {
+        margin: 0 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Laptop styles */
+    body {
+        padding: 30px;
+    }
+    .parent {
+        margin: 0 30px;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Desktop styles */
+    body {
+        padding: 40px;
+    }
+    .parent {
+        margin: 0 40px;
+    }
+}
